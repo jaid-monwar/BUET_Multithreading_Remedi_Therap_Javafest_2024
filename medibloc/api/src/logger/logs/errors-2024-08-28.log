@@ -1,0 +1,5 @@
+{"label":"src/app.js","level":"error","message":"This is test message","timestamp":"2024-08-28 21:59:16"}
+{"label":"src/app.js","level":"error","message":"This is test message","timestamp":"2024-08-28 22:19:37"}
+{"label":"src/app.js","level":"error","message":{"error":"Error in imageUpload : MulterError: Unexpected field","method":"uploadFileToS3","userInfo":{"user":{"department":"patient","email":"sdoctor@gmail.com","id":"sdoctor@gmail.com","orgId":"1"}}},"timestamp":"2024-08-28 22:19:57"}
+{"label":"src/app.js","level":"error","message":{"error":"Error in imageUpload : MulterError: Unexpected field","method":"uploadFileToS3","userInfo":{"user":{"department":"patient","email":"sdoctor@gmail.com","id":"sdoctor@gmail.com","orgId":"1"}}},"timestamp":"2024-08-28 22:20:28"}
+{"label":"src/app.js","level":"error","message":"This is test message","timestamp":"2024-08-28 22:22:40"}
