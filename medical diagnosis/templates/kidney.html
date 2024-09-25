@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kidney Disease Prediction</title>
+  </head>
+  <body style="background: #000; color: violet">
+    <div class="container">
+      <h1>Kidney Disease Prediction Using Machine Learning</h1>
+      <form action="{{ url_for('predict_kidney') }}" method="post">
+        <input type="text" name="age" placeholder="Age" required /><br />
+        <input
+          type="text"
+          name="blood_pressure"
+          placeholder="Blood Pressure"
+          required
+        /><br />
+        <input
+          type="text"
+          name="specific_gravity"
+          placeholder="Specific Gravity"
+          required
+        /><br />
+        <input
+          type="text"
+          name="albumin"
+          placeholder="Albumin"
+          required
+        /><br />
+        <input type="text" name="sugar" placeholder="Sugar" required /><br />
+        <input
+          type="text"
+          name="red_blood_cells"
+          placeholder="Red Blood Cell"
+          required
+        /><br />
+        <input
+          type="text"
+          name="pus_cell"
+          placeholder="Pus Cell"
+          required
+        /><br />
+        <input
+          type="text"
+          name="pus_cell_clumps"
+          placeholder="Pus Cell Clumps"
+          required
+        /><br />
+        <input
+          type="text"
+          name="bacteria"
+          placeholder="Bacteria"
+          required
+        /><br />
+        <input
+          type="text"
+          name="blood_glucose_random"
+          placeholder="Blood Glucose Random"
+          required
+        /><br />
+        <input
+          type="text"
+          name="blood_urea"
+          placeholder="Blood Urea"
+          required
+        /><br />
+        <input
+          type="text"
+          name="serum_creatinine"
+          placeholder="Serum Creatinine"
+          required
+        /><br />
+        <input type="text" name="sodium" placeholder="Sodium" required /><br />
+        <input
+          type="text"
+          name="potassium"
+          placeholder="Potassium"
+          required
+        /><br />
+        <input
+          type="text"
+          name="haemoglobin"
+          placeholder="Haemoglobin"
+          required
+        /><br />
+        <input
+          type="text"
+          name="packed_cell_volume"
+          placeholder="Packed Cell Volume"
+          required
+        /><br />
+        <input
+          type="text"
+          name="white_blood_cell_count"
+          placeholder="White Blood Cell Count"
+          required
+        /><br />
+        <input
+          type="text"
+          name="red_blood_cell_count"
+          placeholder="Red Blood Cell Count"
+          required
+        /><br />
+        <input
+          type="text"
+          name="hypertension"
+          placeholder="Hypertension"
+          required
+        /><br />
+        <input
+          type="text"
+          name="diabetes_mellitus"
+          placeholder="Diabetes Mellitus"
+          required
+        /><br />
+        <input
+          type="text"
+          name="coronary_artery_disease"
+          placeholder="Coronary Artery Disease"
+          required
+        /><br />
+        <input
+          type="text"
+          name="appetite"
+          placeholder="Appetite"
+          required
+        /><br />
+        <input
+          type="text"
+          name="peda_edema"
+          placeholder="Peda Edema"
+          required
+        /><br />
+        <input
+          type="text"
+          name="aanemia"
+          placeholder="Anaemia"
+          required
+        /><br />
+        <button type="submit">Predict</button>
+      </form>
+      <br />
+      <h4>{{ prediction_text }}</h4>
+    </div>
+  </body>
+</html>
